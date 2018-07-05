@@ -3,9 +3,8 @@ import { StyleSheet, Text, View} from 'react-native';
 import {LinearGradient} from 'expo';
 import { Ionicons } from "@expo/vector-icons";
 
-export default class Weather extends Component {
-    render() {
-        return (
+function Weather() {
+    return(
             <LinearGradient 
                 colors={["#00C6FB", "#005BEA"]} 
                 style={styles.container}
@@ -20,9 +19,10 @@ export default class Weather extends Component {
                     <Text style={styles.subtitle}>For more info look outside</Text>
                 </View>
             </LinearGradient>
-        );
-    }
+    )
 }
+
+export default Weather;
 
 const styles = StyleSheet.create({
     container: {
